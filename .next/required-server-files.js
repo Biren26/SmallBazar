@@ -324,17 +324,7 @@ self.__SERVER_FILES_MANIFEST={
     "turbopack": {
       "root": "D:\\Necessary\\React\\ecommerce-project"
     },
-    "distDirRoot": ".next",
-    "_originalRewrites": {
-      "beforeFiles": [],
-      "afterFiles": [
-        {
-          "source": "/api/:path*",
-          "destination": "http://localhost:3000/api/:path*"
-        }
-      ],
-      "fallback": []
-    }
+    "distDirRoot": ".next"
   },
   "appDir": "D:\\Necessary\\React\\ecommerce-project",
   "relativeAppDir": "",

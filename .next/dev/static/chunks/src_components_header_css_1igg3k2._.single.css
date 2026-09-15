@@ -1,0 +1,144 @@
+/* [project]/src/components/header.css [app-client] (css) */
+.header {
+  color: #fff;
+  background-color: #084f2d;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .left-section {
+  width: 208px;
+}
+
+@media (max-width: 800px) {
+  .header .left-section {
+    width: unset;
+  }
+}
+
+.header .header-link {
+  cursor: pointer;
+  border: 1px solid #0000;
+  border-radius: 2px;
+  padding: 6px 9.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header .header-link:hover {
+  border: 1px solid #fff;
+}
+
+.header .logo {
+  height: 26px;
+  margin-top: 1px;
+}
+
+.header .mobile-logo {
+  display: none;
+}
+
+@media (max-width: 675px) {
+  .header .logo {
+    display: none;
+  }
+
+  .header .mobile-logo {
+    height: 26px;
+    margin-top: 1px;
+    display: block;
+  }
+}
+
+.header .middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.header .search-bar {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  width: 0;
+  height: 38px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.header .search-button {
+  background-color: #baffbe;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  flex-shrink: 0;
+  width: 45px;
+  height: 40px;
+}
+
+.header .search-icon {
+  height: 20px;
+  margin-top: 3px;
+  margin-left: 0;
+}
+
+.header .right-section {
+  flex-shrink: 0;
+  justify-content: end;
+  width: 180px;
+  display: flex;
+}
+
+.header .orders-link {
+  color: #fff;
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: flex;
+}
+
+.header .orders-text {
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+}
+
+.header .cart-link {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.header .cart-icon {
+  width: 38px;
+}
+
+.header .cart-text {
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.header .cart-quantity {
+  color: #084f2d;
+  text-align: center;
+  width: 26px;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 8.5px;
+  right: 46px;
+}
+
+/*# sourceMappingURL=src_components_header_css_1igg3k2._.single.css.map*/
