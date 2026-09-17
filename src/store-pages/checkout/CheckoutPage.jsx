@@ -10,6 +10,7 @@ export function CheckoutPage({ cart, loadCart }) {
 
   useEffect(() => {
     const fetchCheckoutData = async () =>{
+      // Refresh delivery and payment data whenever the cart changes.
       let response = await axios.get(
           '/api/delivery-options?expand=estimatedDeliveryTime');
           setDeliveryOptions(response.data);

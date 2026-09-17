@@ -10,6 +10,7 @@ export function Product({product, loadCart}) {
                         productId: product.id,
                         quantity
                     });
+                    // Refresh shared cart state so the header badge reflects the server response.
                     await loadCart();
                 };
 

@@ -18,11 +18,13 @@ export function DeliveryOptions({ cartItem, deliveryOptions, loadCart }) {
                     await axios.put(`/api/cart-items/${cartItem.productId}`, {
                         deliveryOptionId: deliveryOption.id
                     });
+                    // Reload the cart because the selected option is persisted by the API.
                     await loadCart();
                 }
                 return (
                     <div key={deliveryOption.id} className="delivery-option"
                         onClick={updateDeliveryOption}>
+                        {/* The parent row owns the update request; the radio only reflects selected state. */}
                         <input type="radio"
                             checked={deliveryOption.id === cartItem.deliveryOptionId}
                             onChange={() => {}}

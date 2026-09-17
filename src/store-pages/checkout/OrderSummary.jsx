@@ -5,6 +5,7 @@ import { DeliveryOptions } from './DeliveryOptions';
 export function OrderSummary({cart, deliveryOptions, loadCart }){
     return(
                   <div className="order-summary">
+                    {/* Delivery dates depend on the options request completing first. */}
                     {deliveryOptions.length > 0 && cart.map((cartItem) => {
                       const selectedDeliveryOption = deliveryOptions
                         .find((deliveryOption) => {

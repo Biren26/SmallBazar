@@ -10,6 +10,7 @@ import { TrackingPage } from '../store-pages/TrackingPage';
 export function StorePage({ page }) {
   const [cart, setCart] = useState([]);
 
+  // Keep cart data at the page-router level so every store view sees the same state.
   const loadCart = async () => {
     const response = await axios.get('/api/cart-items?expand=product');
     setCart(response.data);

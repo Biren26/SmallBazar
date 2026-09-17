@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export function Header({ cart }) {
+    // The badge shows total units, so sum quantities rather than counting cart lines.
     let totalQuantity = 0;
 
     cart.forEach((cartItem) =>{
